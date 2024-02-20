@@ -241,11 +241,14 @@ data1 %>%
   ) %>%
   hc_add_theme(hc_theme_google())  %>%
   hc_tooltip(pointFormat = '<b> Number of Weeks on board</b> {point.y} <br>') %>%
+  hc_xAxis(
+    title = list(
+      text = 'Songs'
+    )
+  ) %>%
   hc_yAxis(
     title = list(
-      text = list(
-        text = 'Weeks on Board'
-      )
+      text = 'Weeks on Board'
     )
   ) %>%
   hc_title(
